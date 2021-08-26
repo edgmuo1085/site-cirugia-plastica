@@ -247,7 +247,7 @@
 						<form class="row g-3">
 
 							<div class="col-md-12">
-								<label for="inputNombres" class="form-label color-white">Nombres</label>
+								<label for="inputNombres" class="form-label color-white">Nombres completos</label>
 								<input type="text" class="form-control" id="inputNombres">
 							</div>
 							<div class="col-md-12">
