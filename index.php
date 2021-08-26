@@ -12,7 +12,7 @@
 
 <body>
 	<header id="inicio">
-		<nav class="navbar boxshadow navbar-expand-sm navbar-light header-bg fixed-top" aria-label="navbar">
+		<nav class="navbar boxshadow navbar-expand-sm navbar-light bg-light fixed-top" aria-label="navbar">
 			<div class="container">
 				<a class="navbar-brand" href="#"> <img src="img/firma.png" alt="firma" height="70"> </a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsPage" aria-controls="navbarsPage" aria-expanded="false" aria-label="Toggle navigation">
