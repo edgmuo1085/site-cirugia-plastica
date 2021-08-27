@@ -28,7 +28,7 @@ body {
 /* Carrusel */
 
 .margen-top {
-    margin-top: 6rem;
+    margin-top: 5.4rem;
 }
 
 .carousel-caption {
@@ -67,10 +67,14 @@ body {
     background-color: #007B7B;
 }
 
+.footer-bg {
+    box-shadow: 0px -2px 8px 1px rgb(123 123 123)
+}
+
 .footer-title {
     color: #fff;
     display: block;
-    margin: 1.5em auto;
+    margin: 1.5em auto 1em;
     text-align: center;
 }
 
@@ -80,6 +84,10 @@ body {
 
 .footer-contacto {
     margin: 2em auto;
+}
+
+.form-control {
+    border-radius: 0;
 }
 
 .footer-linea {
@@ -93,7 +101,7 @@ body {
     display: flex;
     justify-content: start;
     align-items: center;
-    margin: 8px 10px;
+    margin: 4px 10px;
 }
 
 .footer-informacion i {
@@ -118,4 +126,28 @@ body {
     font-size: 2em;
     color: #fff;
     margin: 1px 6px;
+}
+
+.d-flex-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em auto;
+}
+
+.d-flex-footer>div {
+    max-width: 21em;
+    width: 100%;
+    /* border: 1px solid #fff; */
+    margin: 2em 0;
+}
+
+@media screen and (max-width: 767px) {
+    .d-flex-footer {
+        flex-direction: column;
+    }
+    .d-flex-footer>div {
+        max-width: 100vh;
+        margin: .4em 0;
+    }
 }
