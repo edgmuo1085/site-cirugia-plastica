@@ -1,8 +1,9 @@
 <?php
-require './lib/conection.php';
-require './lib/slider.php';
+require './sites/core/engines/config.php';
+require './sites/core/engines/service.php';
+$core = 'sites/public/';
 
-$sl = new Slider();
+$sl = new Service('');
 
 $sliders = null;
 $category = null;
@@ -25,12 +26,12 @@ foreach ($categories as $category) {
         if ($category['category'] === $slice['category']) {
             if ($once) {
                 $servicio .= "<div class='carousel-item active'>
-                                        <img src='" . $slice['image'] . "' class='d-block w-100' alt='" . $slice['image'] . "'>
+                                        <img src='" . $core . $slice['image'] . "' class='d-block w-100' alt='" . $slice['image'] . "'>
                                     </div>
                                     ";
             } else {
                 $servicio .= "<div class='carousel-item'>
-                                        <img src='" . $slice['image'] . "' class='d-block w-100' alt='" . $slice['image'] . "'>
+                                        <img src='" . $core . $slice['image'] . "' class='d-block w-100' alt='" . $slice['image'] . "'>
                                     </div>
                                     ";
             }

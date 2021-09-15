@@ -1,5 +1,6 @@
 <?php
-require 'lib/funtions.php';
+require './sites/core/engines/functions.php';
+$core = 'sites/public/';
 
 ?>
 
@@ -12,7 +13,7 @@ require 'lib/funtions.php';
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="robots" content="noindex, follow">
 	<title>.::Cirugía Plastica a tu alcance Rafael Barrera::.</title>
-	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+	<link rel="shortcut icon" type="image/x-icon" href="<?php echo $core; ?>img/favicon.png">
 	<meta name="description" content="El Doctor RAFAEL BARRERA VÁZQUEZ es médico general titulado con mención honorífica de la facultad de medicina de la Universidad Nacional Autónoma de México.">
 	<meta name="keywords" content="Cirujano Plástico, Abdominoplastia, Cirujano plástico certificado, Implante de senos, Cirugia Plástica, Rinoplastia" />
 	<meta property="og:locale" content="es_ES" />
@@ -24,14 +25,14 @@ require 'lib/funtions.php';
 	<meta property="article:published_time" content="<?php echo $date; ?>" />
 	<meta property="og:image" content="<?php echo $ruta; ?>img/doctor-rafael.jpg" />
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
+	<link href="<?php echo $core; ?>css/main.css" rel="stylesheet">
 </head>
 
 <body>
 	<header id="inicio">
 		<nav class="navbar boxshadow navbar-expand-sm navbar-light header-bg fixed-top" aria-label="navbar">
 			<div class="container">
-				<a class="navbar-brand" href="#"> <img src="img/firma-white.png" alt="firma" height="60"> </a>
+				<a class="navbar-brand" href="#"> <img src="<?php echo $core; ?>img/firma.png" alt="firma" height="60"> </a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsPage" aria-controls="navbarsPage" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -41,7 +42,6 @@ require 'lib/funtions.php';
 						<li class="nav-item"> <a class="nav-link text-uppercase" aria-current="page" href="#inicio">Inicio</a> </li>
 						<li class="nav-item"> <a class="nav-link text-uppercase" href="#quienes-somos">Quienes Somos</a> </li>
 						<li class="nav-item"> <a class="nav-link text-uppercase" href="#servicios">Servicios</a> </li>
-						<li class="nav-item"> <a class="nav-link text-uppercase" href="#">Galería</a> </li>
 						<li class="nav-item"> <a class="nav-link text-uppercase" href="#contactanos">Contáctanos</a> </li>
 					</ul>
 				</div>
@@ -57,7 +57,7 @@ require 'lib/funtions.php';
 			</div>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img class="bd-placeholder-img" src="img/slider/slider-001.jpg" width="100%" height="100%">
+					<img class="bd-placeholder-img" src="<?php echo $core; ?>img/slider/slider-001.jpg" width="100%" height="100%">
 
 					<div class="container">
 						<div class="carousel-caption text-start d-none d-md-block d-lg-block d-xl-block">
@@ -67,7 +67,7 @@ require 'lib/funtions.php';
 					</div>
 				</div>
 				<div class="carousel-item">
-					<img class="bd-placeholder-img" src="img/slider/slider-001.jpg" width="100%" height="100%">
+					<img class="bd-placeholder-img" src="<?php echo $core; ?>img/slider/slider-001.jpg" width="100%" height="100%">
 
 					<div class="container">
 						<div class="carousel-caption d-none d-md-block d-lg-block d-xl-block">
@@ -96,7 +96,7 @@ require 'lib/funtions.php';
 			</div>
 			<div class="row justify-content-center">
 				<div class="col-md-6 text-center px-0">
-					<img src="img/doctor-rafael.jpg" alt="doctor-rafael" class="img-fluid">
+					<img src="<?php echo $core; ?>img/doctor-rafael.jpg" alt="doctor-rafael" class="img-fluid">
 				</div>
 				<div class="col-md-6">
 					<p class="mt-4 px-4 font-size-1">
@@ -121,7 +121,7 @@ require 'lib/funtions.php';
 				<div class="row g-3 hover-img">
 
 					<?php
-						require 'servicios.php';
+					require 'servicios.php';
 					?>
 
 				</div>
@@ -215,6 +215,7 @@ require 'lib/funtions.php';
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="https://use.fontawesome.com/bb6fec3165.js"></script>
+	<script src="<?php echo $core; ?>js/main.js"></script>
 
 </body>
 
