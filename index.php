@@ -26,6 +26,9 @@ $core = 'sites/public/';
 	<meta property="og:image" content="<?php echo $ruta; ?>img/doctor-rafael.jpg" />
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="<?php echo $core; ?>css/main.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
 </head>
 
 <body>

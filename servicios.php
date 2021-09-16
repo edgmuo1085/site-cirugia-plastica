@@ -1,7 +1,7 @@
 <?php
 require './sites/core/engines/config.php';
 require './sites/core/engines/service.php';
-$core = 'sites/public/';
+$core = 'sites/public/img/servicios/';
 
 $sl = new Service('');
 

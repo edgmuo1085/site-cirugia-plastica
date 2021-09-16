@@ -81,13 +81,13 @@ class Service
             return $response;
         }
     }
-    public function editarRegistro($id, $titulo, $descripcion, $estado)
+    public function editarRegistro($id, $title, $description, $category)
     {
-        $query = "UPDATE slider SET titulo=?, descripcion=?, estado=? WHERE id=?";
+        $query = "UPDATE service SET title=?, description=?, category=? WHERE id=?";
         $consulta = $this->con->prepare($query);
-        $consulta->bindParam(1, $titulo);
-        $consulta->bindParam(2, $descripcion);
-        $consulta->bindParam(3, $estado);
+        $consulta->bindParam(1, $title);
+        $consulta->bindParam(2, $description);
+        $consulta->bindParam(3, $category);
         $consulta->bindParam(4, $id);
         return $consulta->execute();
     }
@@ -122,7 +122,16 @@ class Service
     }
     public function get($id)
     {
-        $query = "SELECT * FROM slider WHERE id=?";
+        $query = "SELECT * FROM service WHERE id=?";
+        $consulta = $this->con->prepare($query);
+        $consulta->bindParam(1, $id);
+        $consulta->execute();
+        return $consulta->fetch(PDO::FETCH_ASSOC);
+    }
+    
+    public function getOne($id)
+    {
+        $query = "SELECT * FROM service WHERE id=?";
         $consulta = $this->con->prepare($query);
         $consulta->bindParam(1, $id);
         $consulta->execute();
@@ -139,6 +148,13 @@ class Service
     public function getCategory()
     {
         $query = "SELECT DISTINCT(category), description FROM service ORDER BY category ASC";
+        $consulta = $this->con->query($query);
+        return $consulta->fetchAll(PDO::FETCH_ASSOC);
+    }
+   
+    public function getAllCategory()
+    {
+        $query = "SELECT DISTINCT(category) FROM service ORDER BY category ASC";
         $consulta = $this->con->query($query);
         return $consulta->fetchAll(PDO::FETCH_ASSOC);
     }

@@ -4,7 +4,7 @@ if (!isset($_SESSION['id'], $_SESSION['correo'], $_SESSION['nombres'], $_SESSION
     header("location: ../login");
 } else {
     //RUTA DE IMAGENES    
-    define("DIR_IMAGENES", '../../../public/');
+    define("DIR_IMAGENES", '../../../public/img/servicios/');
     require '../../engines/service.php';
 
     $s = new Service('');
@@ -18,13 +18,19 @@ if (!isset($_SESSION['id'], $_SESSION['correo'], $_SESSION['nombres'], $_SESSION
                     isset($_POST['titulo'], $_POST['descripcion'], $_FILES['imagen'], $_POST['estado']) && !empty($_FILES['imagen']) &&
                     ($_POST['estado'] == 0 || $_POST['estado'] == 1)
                 ) {
-                    //INICIAR INSERCION                                    
-                    //$s->crear($_POST['titulo'],$_POST['descripcion'],$_FILES,$_POST['estado']);                        
+                    //INICIAR INSERCION
+                    //$s->crear($_POST['titulo'],$_POST['descripcion'],$_FILES,$_POST['estado']);
                 }
                 break;
             case 'editarReg':
-                if (isset($_POST['titulo'], $_POST['descripcion'], $_POST['estado'], $_POST['id']) && ($_POST['estado'] == 0 || $_POST['estado'] == 1) && !empty($_POST['id'])) {
-                    //$s->editarRegistro($_POST['id'],$_POST['titulo'],$_POST['descripcion'],$_POST['estado']);                                           
+                if (isset($_POST['category'], $_POST['description'], $_POST['title'], $_POST['id']) && !empty($_POST['id'])) {
+                    $s->editarRegistro($_POST['id'], $_POST['title'], $_POST['description'], $_POST['category']);
+                }
+                break;
+            case 'consultar':
+                if (isset($_POST['id']) && !empty($_POST['id'])) {
+                    echo 'consultar';
+                    $s->getOne($_POST['id']);
                 }
                 break;
             case 'eliminar':
@@ -56,7 +62,7 @@ if (!isset($_SESSION['id'], $_SESSION['correo'], $_SESSION['nombres'], $_SESSION
 
     function concatenar($registro)
     {
-        return $registro['id'] . '&' . $registro['title'] . '&' . str_replace("\r\n", '\n', $registro['description']);
+        return $registro['id'] . '&amp;' . $registro['title'] . '&amp;' . str_replace("\r\n", '\n', $registro['description']);
     }
 
     $registros = $s->getAll();

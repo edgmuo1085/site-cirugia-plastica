@@ -1,5 +1,7 @@
 body {
     background-color: rgba(231, 229, 229, 0.74);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 .color-white {
@@ -161,6 +163,11 @@ body {
     border: 1px solid rgb(216, 215, 215);
     border-radius: 4px;
     padding: 1rem;
+}
+
+.login .margin-form {
+    display: block;
+    height: 0.2rem;
 }
 
 @media screen and (max-width: 767px) {

@@ -31,7 +31,7 @@
                             Correcto!
                         </div>
                     </div>
-
+                    <div class="margin-form"></div>
                     <div class="col-md-12 position-relative">
                         <label for="passw" class="form-label">Contraseña</label>
                         <input type="password" class="form-control" id="passw" name="passw" required>
@@ -39,8 +39,8 @@
                             Correcto!
                         </div>
                     </div>
-
-                    <div class="d-grid gap-2">
+                    <div class="margin-form"></div>
+                    <div class="d-grid gap-3">
                         <button type="submit" class="btn btn-primary">Ingresar</button>
                     </div>
                 </form>
