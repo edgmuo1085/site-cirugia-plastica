@@ -1,10 +1,5 @@
+
 <?php
-
-use PHPMailer\PHPMailer\PHPMailer;
-require_once '../../../vendor/autoload.php';
-
-define('GUSER', 'cirugiaplasticacpr@gmail.com');
-define('GPWD', 'xxxxxxxxxxxxxxxxx');
 
 // Email address verification
 function isEmail($email)
@@ -26,27 +21,21 @@ if (
     $clientEmail = addslashes(trim($_POST['inputEmail']));
     $phone = addslashes(trim($_POST['inputTel']));
     $message = addslashes(trim($_POST['inputTextArea']));
+    $subject = 'Contactanos Cirugia Plastica';
 
-    $mail = new PHPMailer;
-    $mail->isSMTP();
-    $mail->SMTPDebug = 0;
-    $mail->Host = 'ssl://smtp.gmail.com';
-    $mail->Port = 465;
-    $mail->SMTPAuth = true;
-    $mail->Username = GUSER;
-    $mail->Password = GPWD;
-    $mail->setFrom($emailTo, $clientName);
-    $mail->addReplyTo($clientEmail, $clientName);
-    $mail->addAddress($emailTo, 'Rafael Barrera Vasquez');
-    $mail->Subject = 'Novedades Cirugia Plastica';
-    $mail->msgHTML(file_get_contents('message.html'), __DIR__);
-    $mail->Body = $message . '<br> ' .$phone. '<br>'. $clientEmail;
-    //$mail->addAttachment('test.txt');
-    if (!$mail->send()) {
-        echo 'Mailer Error: ' . $mail->ErrorInfo;
+    $html = "Hola Rafael Barrera Vasquez," . "\n\r";
+    $html .= "Acabas de ser contactado por " . $clientName . "\n\r";
+    $html .= "Esta persona acaba de mencionar lo siguiente:" . "\n\r";
+    $html .= $message . "\n\r";
+    $html .= "Su número de contacto es : " . $phone . "\n\r";
+    $html .= "Que pases un feliz día." . "\n\r";
+    $html .= "Este mensaje fue enviado el " . date('d/m/Y', time());
+
+    $headers = "From: " . $clientName . " <" . $clientEmail . ">" . "\r\n" . "Reply-To: " . $clientEmail;
+
+    if (mail($emailTo, $subject, $html, $headers)) {
         header("location: ../../../");
     } else {
-        echo 'The email message was sent.';
         header("location: ../../../");
     }
 }

@@ -173,7 +173,7 @@ $route_core = 'sites/public/';
 				<div class="col-md-5">
 					<div class="footer-contacto">
 						<p class="py-2 color-white footer-title-contact">Envianos tus dudas o comentarios completando este breve formulario</p>
-						<form class="row g-3" method="POST" action="sites/public/mail/sendmail.php" autocomplete="on">
+						<form class="row g-3" method="POST" action="sites/public/mail/mail.php" autocomplete="off">
 							<input hidden value="send" name="send" id="send">
 
 							<div class="col-md-12">
