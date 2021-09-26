@@ -154,7 +154,7 @@ $date = Date("Y-m-d H:i:s");
 								<p class="card-text">Es la reconstrucción de la pared abdominal, que consta de eliminación del exceso de piel y grasa con el objetivo final de remodelar el abdomen, la cintura y la forma del tronco del cuerpo.</p>
 								<div class="d-flex justify-content-between align-items-center">
 									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-secondary">Visitar</button>
+										
 									</div>
 								</div>
 							</div>
@@ -184,7 +184,7 @@ $date = Date("Y-m-d H:i:s");
 								<p class="card-text">Cirugía que busca rejuvenecer los párpados mediante la remodelación de los tejidos perioculares.</p>
 								<div class="d-flex justify-content-between align-items-center">
 									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-secondary">Visitar</button>
+										
 									</div>
 								</div>
 							</div>
@@ -214,7 +214,7 @@ $date = Date("Y-m-d H:i:s");
 								<p class="card-text"></p>
 								<div class="d-flex justify-content-between align-items-center">
 									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-secondary">Visitar</button>
+										
 									</div>
 								</div>
 							</div>
@@ -256,7 +256,7 @@ $date = Date("Y-m-d H:i:s");
 								<p class="card-text">Es, desde hace años, una de las cirugías estéticas más solicitadas por las mujeres de entre 20 y 45 años, casi a la par de la liposucción.</p>
 								<div class="d-flex justify-content-between align-items-center">
 									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-secondary">Visitar</button>
+										
 									</div>
 								</div>
 							</div>
@@ -289,7 +289,7 @@ $date = Date("Y-m-d H:i:s");
 								<p class="card-text">La lipoescultura se realiza para zonas localizadas en las cuales la grasa no es demasiada y se tiene la oportunidad de dar mejor forma a dicha zona.</p>
 								<div class="d-flex justify-content-between align-items-center">
 									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-secondary">Visitar</button>
+										
 									</div>
 								</div>
 							</div>
@@ -319,7 +319,7 @@ $date = Date("Y-m-d H:i:s");
 								<p class="card-text">Generalmente, se conoce a la mastopexia como a la cirugía estética cuyo destino es arreglar los problemas de pecho caído.</p>
 								<div class="d-flex justify-content-between align-items-center">
 									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-secondary">Visitar</button>
+										
 									</div>
 								</div>
 							</div>
@@ -349,7 +349,7 @@ $date = Date("Y-m-d H:i:s");
 								<p class="card-text"></p>
 								<div class="d-flex justify-content-between align-items-center">
 									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-secondary">Visitar</button>
+										
 									</div>
 								</div>
 							</div>
@@ -382,7 +382,7 @@ $date = Date("Y-m-d H:i:s");
 								<p class="card-text">La rinoplastia es un procedimiento quirúrgico en el que se cambia la forma o el tamaño de la nariz para darle armonía y un aspecto simétrico.</p>
 								<div class="d-flex justify-content-between align-items-center">
 									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-secondary">Visitar</button>
+										
 									</div>
 								</div>
 							</div>
