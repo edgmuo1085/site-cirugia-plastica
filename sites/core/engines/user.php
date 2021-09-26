@@ -25,12 +25,12 @@ class Usuarios
         $consulta->execute();
         return $consulta->fetch(PDO::FETCH_ASSOC);
     }
-    public function editar($id, $usuario, $nombres, $clave, $correo, $estado, $rol)
+    public function editar($id, $nombres, $usuario, $clave, $correo, $estado, $rol)
     {
-        $query = "UPDATE usuarios SET usuario=?, nombres=?, clave=sha1(?), correo=?, estado=?,rol=? WHERE id=?";
+        $query = "UPDATE usuarios SET nombres=?, usuario=?, clave=sha1(?), correo=?, estado=?, rol=?, updatedat=NOW() WHERE id=?";
         $consulta = $this->con->prepare($query);
-        $consulta->bindParam(1, $usuario);
-        $consulta->bindParam(2, $nombres);
+        $consulta->bindParam(1, $nombres);
+        $consulta->bindParam(2, $usuario);
         $consulta->bindParam(3, $clave);
         $consulta->bindParam(4, $correo);
         $consulta->bindParam(5, $estado);
@@ -38,27 +38,47 @@ class Usuarios
         $consulta->bindParam(7, $id);
         return $consulta->execute();
     }
-    /* public function crear($usuario,$nombres,$clave,$correo,$estado,$rol){        
-        $query = "INSERT INTO usuarios VALUES (null,?,?,?,sha1(?),?,?,?,now())";
+    public function crear($usuario, $nombres, $clave, $correo, $rol)
+    {
+        $query = "INSERT INTO usuarios VALUES (?,?,sha1(?),?,'1',?,now(),now())";
         $consulta = $this->con->prepare($query);
-        $consulta->bindParam(1,$nombres);
-        $consulta->bindParam(3,$usuario);
-        $consulta->bindParam(4,$clave);        
-        $consulta->bindParam(5,$correo);        
-        $consulta->bindParam(6,$estado);        
-        $consulta->bindParam(7,$rol);        
+        $consulta->bindParam(1, $nombres);
+        $consulta->bindParam(2, $usuario);
+        $consulta->bindParam(3, $clave);
+        $consulta->bindParam(4, $correo);
+        $consulta->bindParam(5, $rol);
         return $consulta->execute();
     }
-    
-    public function eliminar($id){
+
+    public function desactivar($id, $estado)
+    {
+        $query = "UDPATE usuarios SET estado=? WHERE id=?";
+        $consulta = $this->con->prepare($query);
+        $consulta->bindParam(1, $id);
+        $consulta->bindParam(2, $estado);
+        return $consulta->execute();
+    }
+
+    public function eliminar($id)
+    {
         $query = "DELETE FROM usuarios WHERE id=?";
         $consulta = $this->con->prepare($query);
-        $consulta->bindParam(1,$id);        
+        $consulta->bindParam(1, $id);
         return $consulta->execute();
-    } */
+    }
+
     public function getUsuario($id)
     {
-        $query = "SELECT * FROM usuarios WHERE id=?";
+        $query = "SELECT id, nombres, usuario, correo, estado, rol, createdat, updatedat FROM usuarios WHERE id=?";
+        $consulta = $this->con->prepare($query);
+        $consulta->bindParam(1, $id);
+        $consulta->execute();
+        return $consulta->fetch(PDO::FETCH_ASSOC);
+    }
+    
+    public function getUsuarioPass($id)
+    {
+        $query = "SELECT id, nombres, usuario, clave, correo, estado, rol FROM usuarios WHERE id=?";
         $consulta = $this->con->prepare($query);
         $consulta->bindParam(1, $id);
         $consulta->execute();
@@ -66,7 +86,7 @@ class Usuarios
     }
     public function getUsuarios($excepto = 1)
     {
-        $query = "SELECT * FROM usuarios WHERE id<>1 AND id<>? ORDER BY id DESC";
+        $query = "SELECT id, nombres, usuario, correo, estado, rol, createdat, updatedat FROM usuarios WHERE id<>1 AND id<>? ORDER BY id DESC";
         $consulta = $this->con->prepare($query);
         $consulta->bindParam(1, $excepto);
         $consulta->execute();

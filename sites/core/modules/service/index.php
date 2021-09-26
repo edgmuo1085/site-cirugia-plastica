@@ -45,16 +45,12 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <!--
-                                    <a href="#" onclick="edithRegister(\'' . concaenar($registro) . '\')" data-bs-toggle="modal" data-bs-target="#modalEditar"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
-                                    <a href="#" onclick="edithRegister(\'' . implode("\t", array_values($registro)) . '\')" data-bs-toggle="modal" data-bs-target="#modalEditar"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
-                                -->
                                 <?php
                                 foreach ($registros as $registro) {
                                     echo '<tr>
                                     <td>
-                                        <a href="#" onclick="edithRegister(\'' . implode("._.", array_values($registro)) . '\')" data-bs-toggle="modal" data-bs-target="#modalEditar"> <i class="fa fa-pencil" aria-hidden="true"></i> editar</a>
-                                        <a href="#" onclick="editarImg(\'' . $registro['id'] . '\',\'' . DIR_IMAGENES . $registro['image'] . '\')"> <i class="fa fa-picture-o" aria-hidden="true"></i> </a>
+                                        <a href="#" onclick="edithRegisterService(\'' . implode("._.", array_values($registro)) . '\')" data-bs-toggle="modal" data-bs-target="#modalEditar"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
+                                        <a href="#" onclick="editarRegisterImagen(\'' . $registro['id'] . '\',\'' . DIR_IMAGENES . $registro['image'] . '\')"> <i class="fa fa-picture-o" aria-hidden="true"></i> </a>
                                     </td>
                                     <td>' . $registro['title'] . '</td>
                                     <td>' . $registro['description'] . '</td>
@@ -186,8 +182,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://use.fontawesome.com/bb6fec3165.js"></script>
     <script src="../../../public/js/form.js"></script>
-    <script src="../../../public/js/service.js"></script>
-    <script src="../../../public/js/main.js"></script>
+    <script src="../../../public/js/main-admin.js"></script>
 </body>
 
 </html>

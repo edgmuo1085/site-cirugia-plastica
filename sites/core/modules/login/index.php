@@ -51,7 +51,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://use.fontawesome.com/bb6fec3165.js"></script>
     <script src="../../../public/js/form.js"></script>
-    <script src="../../../public/js/main.js"></script>
 </body>
 
 </html>
