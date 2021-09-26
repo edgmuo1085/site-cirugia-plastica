@@ -3,6 +3,7 @@
 /app/logs/*
 !app/cache/.gitkeep
 !app/logs/.gitkeep
+rafael-barrera.zip
 
 # Email spool folder
 /app/spool/*
