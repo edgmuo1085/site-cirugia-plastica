@@ -98,8 +98,7 @@ insert into service (title,image,description, category)
 --ALTER TABLE service AUTO_INCREMENT=1;
 
 
-
-UPDATE service SET image = 'servicio-1.png' WHERE id= 1;
+/* UPDATE service SET image = 'servicio-1.png' WHERE id= 1;
 UPDATE service SET image = 'servicio-2.png' WHERE id= 2;
 UPDATE service SET image = 'servicio-7.png' WHERE id= 3;
 UPDATE service SET image = 'servicio-8.png' WHERE id= 4;
@@ -115,4 +114,4 @@ UPDATE service SET image = 'servicio-15.png' WHERE id= 13;
 UPDATE service SET image = 'servicio-5.png' WHERE id= 14;
 UPDATE service SET image = 'servicio-16.png' WHERE id= 15;
 UPDATE service SET image = 'servicio-6.png' WHERE id= 16;
-UPDATE service SET image = 'servicio-17.png' WHERE id= 17;
+UPDATE service SET image = 'servicio-17.png' WHERE id= 17; */

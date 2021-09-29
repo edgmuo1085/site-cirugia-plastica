@@ -25,13 +25,13 @@ foreach ($categories as $category) {
     foreach ($sliders as $slice) {
         if ($category['category'] === $slice['category']) {
             if ($once) {
-                $servicio .= "<div class='carousel-item active'>
-                                        <img src='" . $core . $slice['image'] . "' class='d-block w-100' alt='" . $slice['image'] . "'>
+                $servicio .= "<div class='carousel-item active' id='modalImg'>
+                                        <img onclick='modalShow(this.src)' src='" . $core . $slice['image'] . "' class='d-block w-100' alt='" . $slice['image'] . "'>
                                     </div>
                                     ";
             } else {
                 $servicio .= "<div class='carousel-item'>
-                                        <img src='" . $core . $slice['image'] . "' class='d-block w-100' alt='" . $slice['image'] . "'>
+                                        <img onclick='modalShow(this.src)' src='" . $core . $slice['image'] . "' class='d-block w-100' alt='" . $slice['image'] . "'>
                                     </div>
                                     ";
             }
@@ -55,7 +55,7 @@ foreach ($categories as $category) {
                                 <p class='card-text'>" . $category['description'] . "</p>
                                 <div class='d-flex justify-content-between align-items-center'>
                                     <div class='btn-group'>
-                                        <button type='button' class='btn btn-sm btn-outline-secondary'>Visitar</button>
+                                        <!--<button type='button' class='btn btn-sm btn-outline-secondary'>Visitar</button>-->
                                     </div>
                                 </div>
                             </div>

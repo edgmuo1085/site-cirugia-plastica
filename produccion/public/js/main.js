@@ -58,35 +58,3 @@ const modalShow = (src) => {
 	 <a href="#"><img class="img-fluid" src="${src}" alt="imagen"></a>`;
     printModal(saludoVentana);
 }
-
-/*
-document.getElementById('modalImg').addEventListener('click', () => {
-
-	const saludoVentana = `<h3 class="text-center my-lg-3 my-md-3 my-sm-1">Comunidad AUNAR</h3>
-	 <a href="#"><img class="img-fluid" src="https://virtual.aunar.edu.co/contenido/archivos/POPBIENVENIDA.jpg" alt="imagen"></a>`;
- 	*/
-
-/* // El selector deseado
-    let brandImg = document.querySelectorAll("#modalImg img");
-
-    for (let i = 0; i < brandImg.length; i++) {
-        let ckEdiloop = brandImg[i];
-        ckEdiloop.addEventListener("click", function(el) {
-            let thisSrc = this.src;
-            let ckEdImg = '<p><img src="' + thisSrc + '" /></p>'; // La forma como las imágenes son envueltas en ckEditor
-            alert('img src es = ' + thisSrc);
-            // CKEDITOR.instances['mi_textarea'].insertHtml(ckEdImg) // Añade img al editor
-        });
-    }
-    printModal(saludoVentana);
-});
-*/
-
-/* 
-if (sessionStorage.getItem("story") == null) {
-    const saludoVentana = `<h3 class="text-center my-lg-3 my-md-3 my-sm-1">Comunidad AUNAR</h3>
-	 <a href="#"><img class="img-fluid" src="https://virtual.aunar.edu.co/contenido/archivos/POPBIENVENIDA.jpg" alt="imagen"></a>`;
-    printModal(saludoVentana);
-
-    sessionStorage.setItem("story", "true");
-} */

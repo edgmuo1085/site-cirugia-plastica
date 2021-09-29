@@ -59,7 +59,7 @@ $date = Date("Y-m-d H:i:s");
 			</div>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img class="bd-placeholder-img" src="./public/img/slider/slider-001.jpg" width="100%" height="100%">
+					<img onclick="modalShow(this.src)" class="bd-placeholder-img" src="./public/img/slider/slider-001.jpg" width="100%" height="100%">
 
 					<div class="container">
 						<div class="carousel-caption text-start d-none d-md-block d-lg-block d-xl-block">
@@ -69,7 +69,7 @@ $date = Date("Y-m-d H:i:s");
 					</div>
 				</div>
 				<div class="carousel-item">
-					<img class="bd-placeholder-img" src="./public/img/slider/slider-001.jpg" width="100%" height="100%">
+					<img onclick="modalShow(this.src)" class="bd-placeholder-img" src="./public/img/slider/slider-001.jpg" width="100%" height="100%">
 
 					<div class="container">
 						<div class="carousel-caption d-none d-md-block d-lg-block d-xl-block">
@@ -128,16 +128,16 @@ $date = Date("Y-m-d H:i:s");
 							<div id="carouselExampleControls0" class="carousel slide" data-bs-ride="carousel">
 								<div class="carousel-inner">
 									<div class="carousel-item active">
-										<img src="./public/img/servicios/servicio-1.png" class="d-block w-100" alt="servicio-1.png">
+										<img onclick="modalShow(this.src)" src="./public/img/servicios/servicio-1.png" class="d-block w-100" alt="servicio-1.png">
 									</div>
 									<div class="carousel-item">
-										<img src="./public/img/servicios/servicio-2.png" class="d-block w-100" alt="servicio-2.png">
+										<img onclick="modalShow(this.src)" src="./public/img/servicios/servicio-2.png" class="d-block w-100" alt="servicio-2.png">
 									</div>
 									<div class="carousel-item">
-										<img src="./public/img/servicios/servicio-7.png" class="d-block w-100" alt="servicio-7.png">
+										<img onclick="modalShow(this.src)" src="./public/img/servicios/servicio-7.png" class="d-block w-100" alt="servicio-7.png">
 									</div>
 									<div class="carousel-item">
-										<img src="./public/img/servicios/servicio-8.png" class="d-block w-100" alt="servicio-8.png">
+										<img onclick="modalShow(this.src)" src="./public/img/servicios/servicio-8.png" class="d-block w-100" alt="servicio-8.png">
 									</div>
 								</div>
 								<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls0" data-bs-slide="prev">
@@ -167,7 +167,7 @@ $date = Date("Y-m-d H:i:s");
 							<div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
 								<div class="carousel-inner">
 									<div class="carousel-item active">
-										<img src="./public/img/servicios/servicio-9.png" class="d-block w-100" alt="servicio-9.png">
+										<img onclick="modalShow(this.src)" src="./public/img/servicios/servicio-9.png" class="d-block w-100" alt="servicio-9.png">
 									</div>
 								</div>
 								<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
@@ -197,7 +197,7 @@ $date = Date("Y-m-d H:i:s");
 							<div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
 								<div class="carousel-inner">
 									<div class="carousel-item active">
-										<img src="./public/img/servicios/servicio-10.png" class="d-block w-100" alt="servicio-10.png">
+										<img onclick="modalShow(this.src)" src="./public/img/servicios/servicio-10.png" class="d-block w-100" alt="servicio-10.png">
 									</div>
 								</div>
 								<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
@@ -227,19 +227,19 @@ $date = Date("Y-m-d H:i:s");
 							<div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
 								<div class="carousel-inner">
 									<div class="carousel-item active">
-										<img src="./public/img/servicios/servicio-3.png" class="d-block w-100" alt="servicio-3.png">
+										<img onclick="modalShow(this.src)" src="./public/img/servicios/servicio-3.png" class="d-block w-100" alt="servicio-3.png">
 									</div>
 									<div class="carousel-item">
-										<img src="./public/img/servicios/servicio-11.png" class="d-block w-100" alt="servicio-11.png">
+										<img onclick="modalShow(this.src)" src="./public/img/servicios/servicio-11.png" class="d-block w-100" alt="servicio-11.png">
 									</div>
 									<div class="carousel-item">
-										<img src="./public/img/servicios/servicio-12.png" class="d-block w-100" alt="servicio-12.png">
+										<img onclick="modalShow(this.src)" src="./public/img/servicios/servicio-12.png" class="d-block w-100" alt="servicio-12.png">
 									</div>
 									<div class="carousel-item">
-										<img src="./public/img/servicios/servicio-13.png" class="d-block w-100" alt="servicio-13.png">
+										<img onclick="modalShow(this.src)" src="./public/img/servicios/servicio-13.png" class="d-block w-100" alt="servicio-13.png">
 									</div>
 									<div class="carousel-item">
-										<img src="./public/img/servicios/servicio-14.png" class="d-block w-100" alt="servicio-14.png">
+										<img onclick="modalShow(this.src)" src="./public/img/servicios/servicio-14.png" class="d-block w-100" alt="servicio-14.png">
 									</div>
 								</div>
 								<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
@@ -269,10 +269,10 @@ $date = Date("Y-m-d H:i:s");
 							<div id="carouselExampleControls4" class="carousel slide" data-bs-ride="carousel">
 								<div class="carousel-inner">
 									<div class="carousel-item active">
-										<img src="./public/img/servicios/servicio-4.png" class="d-block w-100" alt="servicio-4.png">
+										<img onclick="modalShow(this.src)" src="./public/img/servicios/servicio-4.png" class="d-block w-100" alt="servicio-4.png">
 									</div>
 									<div class="carousel-item">
-										<img src="./public/img/servicios/servicio-15.png" class="d-block w-100" alt="servicio-15.png">
+										<img onclick="modalShow(this.src)" src="./public/img/servicios/servicio-15.png" class="d-block w-100" alt="servicio-15.png">
 									</div>
 								</div>
 								<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="prev">
@@ -302,7 +302,7 @@ $date = Date("Y-m-d H:i:s");
 							<div id="carouselExampleControls5" class="carousel slide" data-bs-ride="carousel">
 								<div class="carousel-inner">
 									<div class="carousel-item active">
-										<img src="./public/img/servicios/servicio-5.png" class="d-block w-100" alt="servicio-5.png">
+										<img onclick="modalShow(this.src)" src="./public/img/servicios/servicio-5.png" class="d-block w-100" alt="servicio-5.png">
 									</div>
 								</div>
 								<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="prev">
@@ -332,7 +332,7 @@ $date = Date("Y-m-d H:i:s");
 							<div id="carouselExampleControls6" class="carousel slide" data-bs-ride="carousel">
 								<div class="carousel-inner">
 									<div class="carousel-item active">
-										<img src="./public/img/servicios/servicio-16.png" class="d-block w-100" alt="servicio-16.png">
+										<img onclick="modalShow(this.src)" src="./public/img/servicios/servicio-16.png" class="d-block w-100" alt="servicio-16.png">
 									</div>
 								</div>
 								<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls6" data-bs-slide="prev">
@@ -362,10 +362,10 @@ $date = Date("Y-m-d H:i:s");
 							<div id="carouselExampleControls7" class="carousel slide" data-bs-ride="carousel">
 								<div class="carousel-inner">
 									<div class="carousel-item active">
-										<img src="./public/img/servicios/servicio-6.png" class="d-block w-100" alt="servicio-6.png">
+										<img onclick="modalShow(this.src)" src="./public/img/servicios/servicio-6.png" class="d-block w-100" alt="servicio-6.png">
 									</div>
 									<div class="carousel-item">
-										<img src="./public/img/servicios/servicio-17.png" class="d-block w-100" alt="servicio-17.png">
+										<img onclick="modalShow(this.src)" src="./public/img/servicios/servicio-17.png" class="d-block w-100" alt="servicio-17.png">
 									</div>
 								</div>
 								<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls7" data-bs-slide="prev">
@@ -441,19 +441,19 @@ $date = Date("Y-m-d H:i:s");
 
 							<div class="col-md-12">
 								<label for="inputNombres" class="form-label color-white">Nombres completos</label>
-								<input type="text" class="form-control" id="inputNombres" name="inputNombres">
+								<input type="text" class="form-control" id="inputNombres" name="inputNombres" required>
 							</div>
 							<div class="col-md-12">
 								<label for="inputEmail" class="form-label color-white">Correo electrónico</label>
-								<input type="email" class="form-control" id="inputEmail" name="inputEmail">
+								<input type="email" class="form-control" id="inputEmail" name="inputEmail" required>
 							</div>
 							<div class="col-12">
 								<label for="inputTel" class="form-label color-white">Número Telefónico</label>
-								<input type="text" class="form-control" id="inputTel" name="inputTel">
+								<input type="text" class="form-control" id="inputTel" name="inputTel" required>
 							</div>
 							<div class="col-12">
 								<label for="inputTextArea" class="form-label color-white">Mensaje</label>
-								<textarea class="form-control" id="inputTextArea" name="inputTextArea" rows="3"></textarea>
+								<textarea class="form-control" id="inputTextArea" name="inputTextArea" rows="3" required></textarea>
 							</div>
 							<div class="d-grid gap-3">
 								<button class="btn btn-secondary" type="submit">Enviar</button>
@@ -482,6 +482,7 @@ $date = Date("Y-m-d H:i:s");
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="https://use.fontawesome.com/bb6fec3165.js"></script>
+	<script src="public/js/main.js"></script>
 
 </body>
 

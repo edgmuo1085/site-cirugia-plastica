@@ -178,19 +178,19 @@ $route_core = 'sites/public/';
 
 							<div class="col-md-12">
 								<label for="inputNombres" class="form-label color-white">Nombres completos</label>
-								<input type="text" class="form-control" id="inputNombres" name="inputNombres">
+								<input type="text" class="form-control" id="inputNombres" name="inputNombres" required>
 							</div>
 							<div class="col-md-12">
 								<label for="inputEmail" class="form-label color-white">Correo electrónico</label>
-								<input type="email" class="form-control" id="inputEmail" name="inputEmail">
+								<input type="email" class="form-control" id="inputEmail" name="inputEmail" required>
 							</div>
 							<div class="col-12">
 								<label for="inputTel" class="form-label color-white">Número Telefónico</label>
-								<input type="text" class="form-control" id="inputTel" name="inputTel">
+								<input type="text" class="form-control" id="inputTel" name="inputTel" required>
 							</div>
 							<div class="col-12">
 								<label for="inputTextArea" class="form-label color-white">Mensaje</label>
-								<textarea class="form-control" id="inputTextArea" name="inputTextArea" rows="3"></textarea>
+								<textarea class="form-control" id="inputTextArea" name="inputTextArea" rows="3" required></textarea>
 							</div>
 							<div class="d-grid gap-3">
 								<button class="btn btn-secondary" type="submit">Enviar</button>
