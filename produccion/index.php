@@ -34,7 +34,7 @@ $date = Date("Y-m-d H:i:s");
 	<header id="inicio">
 		<nav class="navbar boxshadow navbar-expand-sm navbar-light header-bg fixed-top" aria-label="navbar">
 			<div class="container">
-				<a class="navbar-brand" href="#"> <img src="./public/img/firma.png" alt="firma" height="60"> </a>
+				<a class="navbar-brand" href="index.php"> <img src="./public/img/firma.png" alt="firma" height="60"> </a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsPage" aria-controls="navbarsPage" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
