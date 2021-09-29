@@ -52,9 +52,8 @@ const printModal = (content) => {
     });
 };
 
-
 const modalShow = (src) => {
-    const saludoVentana = `<h3 class="text-center my-lg-3 my-md-3 my-sm-1">Imagen Ampliada</h3>
-	 <a href="#"><img class="img-fluid" src="${src}" alt="imagen"></a>`;
+    const saludoVentana = `<h5 class="text-center my-lg-3 my-md-3 my-sm-1 text-white">Imagen Ampliada</h5>
+	 <img class="img-fluid rounded" src="${src}" alt="imagen">`;
     printModal(saludoVentana);
 }

@@ -49,12 +49,9 @@ body {
 }
 
 .hover-img div div img:hover {
-    /* filter: saturate(180%); */
-    /* filter: sepia(60%); */
     filter: saturate(180%);
     transform: scale(1.03);
     transition: all 0.5s ease-in-out;
-    /* z-index: 9999; */
 }
 
 .font-size-1 {
@@ -195,20 +192,24 @@ body {
 }
 
 .ed-modal-content {
-    background: #fff;
+    background-color: #007b7b;
     width: 60%;
     max-width: 1300px;
     margin: auto;
+    padding: 0.5rem;
     border-radius: 10px;
 }
 
-@media screen and (max-width: 411px) {
+@media (max-width: 411px) {
     .ed-modal-content {
         width: 95%;
     }
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 768px) {
+    .ed-modal-content {
+        width: 70%;
+    }
     .d-flex-footer {
         flex-direction: column;
     }

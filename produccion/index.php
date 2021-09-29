@@ -59,7 +59,7 @@ $date = Date("Y-m-d H:i:s");
 			</div>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img onclick="modalShow(this.src)" class="bd-placeholder-img" src="./public/img/slider/slider-001.jpg" width="100%" height="100%">
+					<img class="bd-placeholder-img" src="./public/img/slider/slider-001.jpg" width="100%" height="100%">
 
 					<div class="container">
 						<div class="carousel-caption text-start d-none d-md-block d-lg-block d-xl-block">
@@ -69,7 +69,7 @@ $date = Date("Y-m-d H:i:s");
 					</div>
 				</div>
 				<div class="carousel-item">
-					<img onclick="modalShow(this.src)" class="bd-placeholder-img" src="./public/img/slider/slider-001.jpg" width="100%" height="100%">
+					<img class="bd-placeholder-img" src="./public/img/slider/slider-001.jpg" width="100%" height="100%">
 
 					<div class="container">
 						<div class="carousel-caption d-none d-md-block d-lg-block d-xl-block">
