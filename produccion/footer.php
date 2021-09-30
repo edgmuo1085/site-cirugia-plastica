@@ -74,7 +74,7 @@
     <span class="footer-linea"></span>
     <div class="container fluid">
         <div class="d-flex-footer text-center color-white mt-2">
-            <div>Cirugia Plástica a tu Alcance</div>
+            <div>Cirugia Plástica</div>
             <div>Todos los Derechos Reservados</div>
             <div>
                 &copy;
