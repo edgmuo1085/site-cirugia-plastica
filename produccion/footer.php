@@ -20,7 +20,7 @@
                         </p>
                         <p class="footer-informacion">
                             <i class="fa fa-map-marker" aria-hidden="true"></i>
-                            <span>rafael.barrera@gmail.com</span>
+                            <span>Calzada del Hueso 331<br>Colonia Floresta Coyoacán.<br>Ciudad de México</span>
                         </p>
                     </div>
                     <div class="md-10 mt-4">

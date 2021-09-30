@@ -95,15 +95,16 @@ body {
 
 .footer-informacion {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
-    margin: 4px 10px;
+    margin: 6px 10px;
 }
 
 .footer-informacion i {
+    width: 2rem;
+    text-align: center;
     font-size: 1.8em;
     color: #fff;
-    padding-right: 8px;
 }
 
 .footer-informacion span {
