@@ -60,7 +60,7 @@ $route_core = 'sites/public/';
 			</div>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img class="bd-placeholder-img" src="<?php echo $route_core; ?>img/slider/slider-001.jpg" width="100%" height="100%">
+					<img class="bd-placeholder-img" src="<?php echo $route_core; ?>img/slider/slider-001.png" width="100%" height="100%">
 
 					<div class="container">
 						<div class="carousel-caption text-start d-none d-md-block d-lg-block d-xl-block">
@@ -70,7 +70,7 @@ $route_core = 'sites/public/';
 					</div>
 				</div>
 				<div class="carousel-item">
-					<img class="bd-placeholder-img" src="<?php echo $route_core; ?>img/slider/slider-001.jpg" width="100%" height="100%">
+					<img class="bd-placeholder-img" src="<?php echo $route_core; ?>img/slider/slider-001.png" width="100%" height="100%">
 
 					<div class="container">
 						<div class="carousel-caption d-none d-md-block d-lg-block d-xl-block">

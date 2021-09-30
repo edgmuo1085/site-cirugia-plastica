@@ -49,12 +49,9 @@ body {
 }
 
 .hover-img div div img:hover {
-    /* filter: saturate(180%); */
-    /* filter: sepia(60%); */
     filter: saturate(180%);
     transform: scale(1.03);
     transition: all 0.5s ease-in-out;
-    /* z-index: 9999; */
 }
 
 .font-size-1 {

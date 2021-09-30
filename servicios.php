@@ -6,7 +6,6 @@ $core = 'sites/public/img/servicios/';
 $sl = new Service('');
 
 $sliders = null;
-$category = null;
 $once = true;
 $count = 0;
 

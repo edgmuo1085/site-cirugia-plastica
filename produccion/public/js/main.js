@@ -1,59 +1,46 @@
-/****** */
-// Añadir un objeto de atributos a un elemento
-const addAtributes = (element, attrObj) => {
-    for (let attr in attrObj) {
-        if (attrObj.hasOwnProperty(attr)) element.setAttribute(attr, attrObj[attr]);
-    }
-};
+const redirectPost = (param) => {
+    let url = getAbsolutePath() + 'services.php#servicios';
+    let arrayParam = param.split('._.');
+    let arrayInput = ['title', 'image', 'description', 'category'];
+    let form = document.createElement('form');
+    let input1 = document.createElement('input');
+    let input2 = document.createElement('input');
+    let input3 = document.createElement('input');
+    let input4 = document.createElement('input');
 
-const createCustomElement = (element, attributes, children) => {
-    let customElement = document.createElement(element);
+    document.body.appendChild(form);
+    form.method = 'post';
+    form.action = url;
 
-    if (children !== undefined)
-        children.forEach((el) => {
-            if (el.nodeType) {
-                if (el.nodeType === 1 || el.nodeType === 11)
-                    customElement.appendChild(el);
-            } else {
-                customElement.innerHTML += el;
-            }
-        });
-    addAtributes(customElement, attributes);
-    return customElement;
-};
+    input1.type = 'hidden';
+    input1.name = arrayInput[0];
+    input1.id = arrayInput[0];
+    input1.value = arrayParam[0];
 
-// imprimir modal
-const printModal = (content) => {
-    // crear contenedor interno
-    const modalContentEl = createCustomElement(
-        "div", {
-            id: "ed-modal-content",
-            class: "ed-modal-content",
-        }, [content]
-    );
+    input2.type = 'hidden';
+    input2.name = arrayInput[1];
+    input2.id = arrayInput[1];
+    input2.value = arrayParam[1];
 
-    //crear contenedor principal
-    const modalContainerEl = createCustomElement(
-        "div", {
-            id: "ed-modal-container",
-            class: "ed-modal-container",
-        }, [modalContentEl]
-    );
+    input3.type = 'hidden';
+    input3.name = arrayInput[2];
+    input3.id = arrayInput[2];
+    input3.value = arrayParam[2];
 
-    // Imprimir el modal
-    document.body.appendChild(modalContainerEl);
+    input4.type = 'hidden';
+    input4.name = arrayInput[3];
+    input4.id = arrayInput[3];
+    input4.value = arrayParam[3];
 
-    //Remover el modal
-    const removeModal = () => document.body.removeChild(modalContainerEl);
+    form.appendChild(input1);
+    form.appendChild(input2);
+    form.appendChild(input3);
+    form.appendChild(input4);
+    form.submit();
+}
 
-    modalContainerEl.addEventListener("click", (e) => {
-        //console.log(e.target);
-        if (e.target === modalContainerEl) removeModal();
-    });
-};
-
-const modalShow = (src) => {
-    const saludoVentana = `<h5 class="text-center my-lg-3 my-md-3 my-sm-1 text-white">Imagen Ampliada</h5>
-	 <img class="img-fluid rounded" src="${src}" alt="imagen">`;
-    printModal(saludoVentana);
+const getAbsolutePath = () => {
+    var loc = window.location;
+    var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1);
+    return loc.href.substring(0, loc.href.length - ((loc.pathname + loc.search + loc.hash).length - pathName.length));
 }
