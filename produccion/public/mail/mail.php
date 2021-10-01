@@ -1,4 +1,3 @@
-
 <?php
 
 // Email address verification
@@ -13,7 +12,7 @@ if (
     isset($_POST['inputEmail']) && !empty($_POST['inputEmail']) &&
     isset($_POST['inputTel']) && !empty($_POST['inputTel']) &&
     isset($_POST['inputTextArea']) && !empty($_POST['inputTextArea']) &&
-    !isEmail($clientEmail)
+    isEmail($_POST['inputEmail'])
 ) {
     $emailTo = 'cirugiaplasticacpr@gmail.com';
 
@@ -34,8 +33,10 @@ if (
     $headers = "From: " . $clientName . " <" . $clientEmail . ">" . "\r\n" . "Reply-To: " . $clientEmail;
 
     if (mail($emailTo, $subject, $html, $headers)) {
-        header("location: ../../");
+        header("location: ../../index.php?r=1");
     } else {
-        header("location: ../../");
+        header("location: ../../index.php?r=2");
     }
+} else {
+    header("location: ../../index.php?r=2");
 }

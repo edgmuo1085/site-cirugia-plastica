@@ -53,7 +53,7 @@ require './menus.php';
 			</div>
 			<div class="col-md-6">
 				<p class="mt-4 px-4 font-size-1">
-					El Doctor <strong>RAFAEL BARRERA VÁZQUEZ</strong> es médico general titulado con mención honorífica de la facultad de medicina de la <strong>Universidad Nacional Autónoma de México</strong>, con cédula profesional: 2436741; cuenta
+					El Doctor <strong>RAFAEL BARRERA VÁZQUEZ</strong> es cirujano plástico titulado con mención honorífica de la facultad de medicina de la <strong>Universidad Nacional Autónoma de México</strong>, con cédula profesional: 2436741; cuenta
 					con estudios de posgrado en cirugía general y una capacitación continua donde destacan cursos y congresos avalados por instituciones gubernamentales y del sector privado de gran prestigio en nuestro país, fue jefe de residentes
 					en el primer año de cirugía general (de 1997 a 1998); profesor ayudante de patología para alumnos del 4&deg; año en el Hospital General de Zona Troncoso (de 1997 a 1998); profesor ayudante del curso de cirugía general para alumnos
 					del 4º año de la UNAM. Sede Hospital General de Zona Francisco del Paso y Troncoso (de 1997 a 1998); profesor ayudante del curso de cirugía general para alumnos del tercer año de cirugía general de la universidad ANÁHUAC.
@@ -105,7 +105,6 @@ require './menus.php';
 
 				foreach ($categories as $category) {
 
-
 					$servicio = '<div class="col-md-3">
 							<div class="card shadow-sm">
 
@@ -142,7 +141,7 @@ require './menus.php';
 								</div>
 
 								<div class="card-body">
-									<p class="card-text">' .substr($category['description'], 0, 100) . ' ...</p>
+									<p class="card-text">' . substr($category['description'], 0, 100) . ' ...</p>
 									<div class="d-flex justify-content-between align-items-center">
 										<div class="btn-group"></div>
 									</div>
@@ -163,6 +162,36 @@ require './menus.php';
 			</div>
 		</div>
 	</section>
+
+	<?php
+	$iconToast = '';
+	$$msgToast = '';
+
+	if (isset($_GET['r']) && !empty($_GET['r'])) {
+		if ($_GET['r'] == '1') {
+			$iconToast = '<img src="./public/img/ok.svg" width="20px" class="rounded me-2" alt="ok">';
+			$msgToast = 'Gracias por contactarnos. Tu mensaje será leído y contestado pronto.';
+		}
+		if ($_GET['r'] == '2') {
+			$iconToast = '<img src="./public/img/cancelar.svg" width="20px" class="rounded me-2" alt="cancelar">';
+			$msgToast = 'No fue posible enviar tu mensaje. Intentalo otra vez.';
+		}
+	}
+	?>
+
+	<div class="position-fixed bottom-0 start-50 translate-middle-x p-3" style="z-index: 11">
+		<div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+			<div class="toast-header">
+				<?php echo $iconToast; ?>
+				<strong class="me-auto">Contactenos</strong>
+				<small><?php echo $date; ?></small>
+				<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+			</div>
+			<div class="toast-body">
+				<?php echo $msgToast; ?>
+			</div>
+		</div>
+	</div>
 </main>
 
 <?php

@@ -87,9 +87,15 @@
     </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 <script src="https://use.fontawesome.com/bb6fec3165.js"></script>
 <script src="public/js/main.js"></script>
+
+<?php if (isset($_GET['r']) && !empty($_GET['r'])) {
+    if ($_GET['r'] === '1' || $_GET['r'] === '2') { ?>
+        <script src="public/js/toast.js"></script>
+<?php }
+} ?>
 
 </body>
 
