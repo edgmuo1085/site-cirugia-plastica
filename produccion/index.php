@@ -20,7 +20,7 @@ require './menus.php';
 				</div>
 			</div>
 			<div class="carousel-item">
-				<img class="bd-placeholder-img" src="./public/img/slider/slider-001.png" width="100%" height="100%">
+				<img class="bd-placeholder-img" src="./public/img/slider/slider-002.png" width="100%" height="100%">
 
 				<div class="container">
 					<div class="carousel-caption d-none d-md-block d-lg-block d-xl-block">

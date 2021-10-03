@@ -26,14 +26,11 @@
                     <div class="md-10 mt-4">
                         <h2 class="footer-title">Redes Sociales</h2>
                         <div class="iconos-redes">
-                            <a href="#" target="_blank">
+                            <a href="https://www.facebook.com/cirujanoplasticocertificadorafaelbarrera" target="_blank">
                                 <i class="fa fa-facebook-official" aria-hidden="true"></i>
                             </a>
-                            <a href="#" target="_blank">
+                            <a href="https://www.instagram.com/dr.rafaelbarrera/" target="_blank">
                                 <i class="fa fa-instagram" aria-hidden="true"></i>
-                            </a>
-                            <a href="#" target="_blank">
-                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
@@ -74,7 +71,7 @@
     <span class="footer-linea"></span>
     <div class="container fluid">
         <div class="d-flex-footer text-center color-white mt-2">
-            <div>Cirugia Plástica</div>
+            <div>Cirugia Plástica - Dr. Rafael Barrera Vázquez</div>
             <div>Todos los Derechos Reservados</div>
             <div>
                 &copy;

@@ -28,8 +28,8 @@ require './menus.php';
                         <div class="card">
                             <img src="<?php echo $core . $_POST['image']; ?>" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title mb-3"><?php echo $_POST['title']; ?></h5>
-                                <p class="card-text"><?php echo $_POST['description']; ?></p>
+                                <h5 class="card-title mb-3 px-3"><?php echo $_POST['title']; ?></h5>
+                                <p class="card-text px-3 f-size"><?php echo $_POST['description']; ?></p>
                             </div>
                         </div>
                         <div class="row g-3 justify-content-center mt-3">
